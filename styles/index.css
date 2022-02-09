@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: hsl(200, 10%, 90%);
+}
+
+.page__form {
+    width: 360px;
+    margin: 20vh auto;
+    background-color: hsl(0, 100%, 99%);
+}
+
+.form {
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.form__title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form__control {
+    margin-bottom: 24px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.form__label::after {
+    content: "*";
+    color: hsl(0, 50%, 50%);
+}
+
+.form__input {
+    border: 0;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: inset 1px 1px 2px 1px hsla(0, 0%, 0%, 0.4);
+}
+
+.form__message {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.form__submit {
+    margin-top: 18px;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    appearance: none;
+    border: 1px solid transparent;
+    background-color: hsl(220, 90%, 50%);
+    color:hsl(0, 100%, 99%);
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    background-color: hsl(220, 70%, 40%);
+}
