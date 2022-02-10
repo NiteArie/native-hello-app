@@ -53,6 +53,10 @@ body {
     box-shadow: inset 1px 1px 2px 1px hsla(0, 0%, 0%, 0.4);
 }
 
+.form__input--error {
+    box-shadow: 0 0 0px 2px hsl(0, 50%, 50%);
+}
+
 .form__message {
     font-size: 15px;
     line-height: 1.2;
@@ -74,4 +78,43 @@ body {
 
 .form__submit:hover {
     background-color: hsl(220, 70%, 40%);
+}
+
+.modal__body {
+    position: absolute;
+    max-width: 400px;
+    width: 300px;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 24px;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 4px;
+    text-align: center;
+    z-index: 1;
+}
+
+.modal__background {
+    position: fixed;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.modal--hidden {
+    display: none;
+}
+
+.modal__buttons {
+    margin-top: 12px;
+}
+
+.modal__button {
+    padding: 8px 16px;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
 }
